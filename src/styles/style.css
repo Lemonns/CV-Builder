@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+}
+
+*::-webkit-scrollbar {
+    width: 0.1rem;
+}
+button {
+    cursor: pointer;
+}
+#root {
+    height: 110vh;
+}
+
+.preview-container {
+    width: 2000px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cv-comp-container {
+    box-shadow: 2px 2px 5px 5px gray;
+    border-radius: 7px;
+    width: 45%;
+    height: 90%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.personal-info-container {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    margin-bottom: 50px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.personal-info-container-preview {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+
+.personal-info-container form {
+    width: 93%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.personal-info-container form input {
+    outline: none;
+    padding: 6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    height: 30px;
+    border-bottom: 2px solid blue;
+    width: 45%;
+    font-size: 1.3rem;
+}
+
+.edit-add-btn-container {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personal-preview {
+    width: 95%;
+    height: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.personal-header, .job-header, .education-header {
+    font-size: 40px;
+    width: 93%;
+    height: 70px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid;
+    text-align: center;
+}
+
+
+.personal-sub-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120px;
+    align-items: flex-start;
+    /*border: 1px solid;*/
+    width: 400px;
+}
+
+.personal-preview h1 {
+    font-size: 3rem;
+}
+
+.job-form-container {
+    display: flex;
+    flex-direction: column;
+    height: 360px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.job-form-container form {
+    display: flex;
+    height: 95%;
+    justify-content: space-around;
+    width: 93%;
+    flex-direction: column;
+}
+
+.job-form-container form input {
+    outline: none;
+    height: 30px;
+    font-size: 1.3rem;
+    border: none;
+    border-bottom: 2px solid blue;
+}
+
+.desc-box {
+    height: 120px;
+    border: solid 2px blue;
+    font-size: 1.3rem;
+}
+
+.job-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 27px;
+}
+
+.job-card {
+    width: 95%;
+    height: 145px;
+}
+
+.edu-form-container {
+    display: flex;
+    flex-direction: column;
+    height: 340px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.edu-form-container form {
+    display: flex;
+    height: 95%;
+    justify-content: space-around;
+    width: 93%;
+    flex-direction: column;
+}
+
+.edu-form-container form input {
+    outline: none;
+    height: 30px;
+    font-size: 1.3rem;
+    border: none;
+    border-bottom: 2px solid blue;
+}
+
+.edu-form-container form textarea {
+    height: 120px;
+    border: solid 2px blue;
+    font-size: 1.3rem;
+}
+
+.education-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 27px;
+}
+
+.edu-delete, .job-delete {
+    background-color: red;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.edu-add {
+    margin-bottom: 20px;
+    border: none;
+    padding: 7px 15px 7px 15px;
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+    font-size: 15px;
+}
+
+.job-add {
+    border: none;
+    padding: 7px 15px 7px 15px;
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+    font-size: 15px;
+}
+
+.job-delete {
+    margin-bottom: 15px;
+}
+
+.education-card {
+    width: 95%;
+    height: 145px;
+}
+.job-preview-header {
+    margin-top: 15px;
+}
+.education-preview-header, .job-preview-header {
+    margin-bottom: 15px;
+    border-bottom: 1px solid;
+    width: 95%;
+    text-align: center;
+    height: 60px;
+}
+
+.edit-btn, .submit-btn {
+    border: none;
+    padding: 7px 15px 7px 15px;
+    border-radius: 20px;
+    background-color: rgba(70, 70, 211, 0.822);
+    color: white;
+    font-size: 15px;
+}
